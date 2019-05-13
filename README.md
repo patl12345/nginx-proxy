@@ -3,8 +3,8 @@
 
 Near identical to jwilder/nginx-proxy but additionally creates a redirect from the root url to the www. one. Pass desired target domain as VIRTUAL_HOST and all domains that should redirect there as a comma separated list (or just the domain if only one) in REDIRECTING_DOMAIN and all of the domains, both VIRTUAL_HOST and REDIRECTING_DOMAINs in LETSENCRYPT_HOST. e.g
 
-VIRTUAL_HOST: www.example.com<br/>
-REDIRECTING_DOMAIN: example.com,www.example.co.uk,example.co.uk<br/>
+VIRTUAL_HOST: www.example.com  
+REDIRECTING_DOMAIN: example.com,www.example.co.uk,example.co.uk  
 LETSENCRYPT_HOST: www.example.com,example.com,www.example.co.uk,example.co.uk
 
 Will cause all requests to http or https www.example.com,example.com,www.example.co.uk,example.co.uk to be redirected to https://www.example.com
